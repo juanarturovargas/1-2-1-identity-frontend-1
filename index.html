@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Voting</title>
+ <link href='https://fonts.googleapis.com/css?family=Open Sans:400,700' rel='stylesheet' type='text/css'>
+ <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+</head>
+<body class="container">
+ <h1>Registro de Identidad</h1>
+ <div class="table-responsive">
+  <table class="table table-bordered">
+   <thead>
+    <tr>
+     <th>Campo</th>
+     <th>Valor</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td>Nombre</td>
+     <td ><input type="text" id="name" name="name"></td>
+    </tr>
+    <tr>
+     <td>Apellidos</td>
+     <td ><input type="text" id="lastname" name="lastname"></td>
+    </tr>
+    <tr>
+     <td>Lugar de Nacimiento</td>
+     <td ><input type="text" id="birth_place" name="birth_place"></td>
+    </tr>
+    <tr>
+     <td>Año de Nacimiento</td>
+     <td ><input type="text" id="birth_year" name="birth_year"></td>
+    </tr>
+    <tr>
+     <td>Mes de Nacimiento</td>
+     <td ><input type="text" id="birth_month" name="birth_month"></td>
+    </tr>
+    <tr>
+     <td>Dia de Nacimiento</td>
+     <td ><input type="text" id="birth_day" name="birth_day"></td>
+    </tr>
+    <tr>
+     <td>Nacionalidad</td>
+     <td ><input type="text" id="nationality" name="nationality"></td>
+    </tr>
+    <tr>
+     <td>Nacionalidad</td>
+     <td ><input type="text" id="nationality" name="nationality"></td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+ <input type="text" id="candidate" />
+ <a href="#" onclick="voteForCandidate()" class="btn btn-primary">Crear Identidad</a>
+</body>
+<script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<script src="./index.js"></script>
+</html>
