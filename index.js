@@ -3,34 +3,6 @@ var web3 = new Web3(new Web3.providers.HttpProvider("http://ec2-18-232-151-15.co
 
 var abi = JSON.parse(`[
     {
-      "constant": true,
-      "inputs": [],
-      "name": "last_completed_migration",
-      "outputs": [
-        {
-          "name": "",
-          "type": "uint256"
-        }
-      ],
-      "payable": false,
-      "stateMutability": "view",
-      "type": "function"
-    },
-    {
-      "constant": true,
-      "inputs": [],
-      "name": "owner",
-      "outputs": [
-        {
-          "name": "",
-          "type": "address"
-        }
-      ],
-      "payable": false,
-      "stateMutability": "view",
-      "type": "function"
-    },
-    {
       "inputs": [],
       "payable": false,
       "stateMutability": "nonpayable",
@@ -40,11 +12,63 @@ var abi = JSON.parse(`[
       "constant": false,
       "inputs": [
         {
-          "name": "completed",
-          "type": "uint256"
+          "name": "_name",
+          "type": "string"
+        },
+        {
+          "name": "_lastname",
+          "type": "string"
+        },
+        {
+          "name": "_birth_place",
+          "type": "string"
+        },
+        {
+          "name": "_birth_year",
+          "type": "uint8"
+        },
+        {
+          "name": "_birth_month",
+          "type": "uint8"
+        },
+        {
+          "name": "_birth_day",
+          "type": "uint8"
+        },
+        {
+          "name": "_nationality",
+          "type": "string"
+        },
+        {
+          "name": "_photo_identity_hash",
+          "type": "string"
+        },
+        {
+          "name": "_detail_identity_hash",
+          "type": "string"
+        },
+        {
+          "name": "_skill_list",
+          "type": "string"
+        },
+        {
+          "name": "_weight",
+          "type": "string"
+        },
+        {
+          "name": "_height",
+          "type": "string"
+        },
+        {
+          "name": "_ethnic_group",
+          "type": "string"
+        },
+        {
+          "name": "_tutor",
+          "type": "address"
         }
       ],
-      "name": "setCompleted",
+      "name": "createIdentity",
       "outputs": [],
       "payable": false,
       "stateMutability": "nonpayable",
@@ -52,14 +76,18 @@ var abi = JSON.parse(`[
     },
     {
       "constant": false,
-      "inputs": [
+      "inputs": [],
+      "name": "getIdentity",
+      "outputs": [
         {
-          "name": "new_address",
-          "type": "address"
+          "name": "",
+          "type": "string"
+        },
+        {
+          "name": "",
+          "type": "string"
         }
       ],
-      "name": "upgrade",
-      "outputs": [],
       "payable": false,
       "stateMutability": "nonpayable",
       "type": "function"
