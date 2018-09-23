@@ -4,3 +4,6 @@ Creación de una interfaz web para la captura de información de una persona par
 Mediante el uso de la tecnología BlockChain estamos creando una red de información inmutable.
 
 La interfaz trabaja mediante html y js, el backend esta en Etherium con el cliente ganache. La demo trabaja en una m´quina virtual montada en un servicio AWS.
+
+
+En el siguiente Wiki, se describe la solucion tecnica: https://github.com/juanarturovargas/1-2-1-identity-frontend-1/wiki
